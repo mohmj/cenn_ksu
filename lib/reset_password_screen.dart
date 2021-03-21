@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:toast/toast.dart';
 import 'constant.dart';
 
 class ResetPasswordScreen extends StatefulWidget {
@@ -92,9 +93,11 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                 ),
                 onPressed: () {
                   if (email.isNotEmpty) {
-                    // Sign in
+
+                    // Reset password
+
                   } else {
-                    // Please fill all data
+                    Toast.show("Please fill your data", context, duration: Toast.LENGTH_SHORT, gravity: Toast.BOTTOM);
                   }
                 },
               )),
@@ -105,7 +108,8 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                     topLeft: Radius.circular(35),
                     bottomRight: Radius.circular(0),
                     bottomLeft: Radius.circular(0)),
-              )),
+              ),
+          ),
         ],
       ),
     );

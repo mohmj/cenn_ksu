@@ -30,7 +30,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
           Container(
             width: double.infinity,
             height: MediaQuery.of(context).size.height*0.25,
-            child: SafeArea(child: Center(child: Text("Sign up", style: TextStyle(color: Colors.white, fontSize: 62),))),
+            child: SafeArea(child: Center(child: Text("Sign up", style: TextStyle(color: Colors.white, fontSize: 62),),),),
             decoration: BoxDecoration(
               color: primeDarkColor,
               borderRadius: BorderRadius.only(topRight: Radius.circular(0), topLeft: Radius.circular(0), bottomRight: Radius.circular(0), bottomLeft: Radius.circular(75)),
@@ -270,11 +270,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
           Container(
               width: double.infinity,
               height: MediaQuery.of(context).size.height*0.1,
-              child:Center(child: TextButton(child: Text("Sign up", style: TextStyle(color: Colors.white, fontSize: 45),), onPressed: ()  {
+              child:Center(child: TextButton(child: Text("Sign up", style: TextStyle(color: Colors.white, fontSize: 45),), onPressed: (){
+                if(name.isNotEmpty && email.isNotEmpty && phone.isNotEmpty && password.isNotEmpty && confirmPassword.isNotEmpty){
+                  if(password==confirmPassword){
 
-                // Sign up method
+                    // Sign up method
 
-              },)),
+                  }else{
+                 Toast.show("Password doesn't matched", context, duration: Toast.LENGTH_SHORT, gravity: Toast.BOTTOM);
+
+                  }
+                }else{
+                 Toast.show("Please fill your data", context, duration: Toast.LENGTH_SHORT, gravity: Toast.BOTTOM);
+                }
+              },),),
               decoration: BoxDecoration(
                 color: primeDarkColor,
                 borderRadius: BorderRadius.only(topRight: Radius.circular(35), topLeft: Radius.circular(35), bottomRight: Radius.circular(0), bottomLeft: Radius.circular(0)),
