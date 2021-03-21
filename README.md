@@ -1,6 +1,10 @@
 # cenn_ksu
 
-A new Flutter application.
+Useful App for CENN students of KSU for several uses like:
+   * sharing subjects experiences
+   * getting students to know each other
+   * shareing sections' groupes 
+   * TBL
 
 ## Getting Started
 
