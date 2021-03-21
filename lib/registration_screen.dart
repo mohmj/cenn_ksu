@@ -1,4 +1,4 @@
-// import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'constant.dart';
 import 'package:toast/toast.dart';
@@ -270,12 +270,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
           Container(
               width: double.infinity,
               height: MediaQuery.of(context).size.height*0.1,
-              child:Center(child: TextButton(child: Text("Sign in", style: TextStyle(color: Colors.white, fontSize: 45),), onPressed: () {
-                if(email.isNotEmpty && password.isNotEmpty){
-                  // Sign in
-                }else{
-                  // Please fill all data
-                }
+              child:Center(child: TextButton(child: Text("Sign up", style: TextStyle(color: Colors.white, fontSize: 45),), onPressed: ()  {
+
+                // Sign up method
+
               },)),
               decoration: BoxDecoration(
                 color: primeDarkColor,

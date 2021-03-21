@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1040275829780",
+    "project_id": "cen-ksu",
+    "storage_bucket": "cen-ksu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040275829780:android:97b9637604e7ee35dfa301",
+        "android_client_info": {
+          "package_name": "com.example.cenn_ksu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040275829780-au6uvl27e6krithq7ik3ua2lp0hf5j5n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3tDBaQtGnbhkchUKEh7QX40vLFDwIH_o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040275829780-au6uvl27e6krithq7ik3ua2lp0hf5j5n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
